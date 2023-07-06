@@ -2,16 +2,18 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int[] array = new int[8];
+int[] array = new int[8]; // создаю массив состоящий из 8 элементов
 
-for (int i = 0; i < array.Length; i = i + 1)
+for (int i = 0; i < array.Length; i = i + 1) // цикл (вводится переменная i, которая с каждым
+                                            // выполнением цикла будет добавлять i+1 и будет расти
+                                            // до длинны массива array.Lenght
 {
-    Console.Write($"Ведите {i+1} элемент массива: ");
-    array[i] = int.Parse(Console.ReadLine());
+    Console.Write($"Ведите {i+1} элемент массива: "); // ввожу с клавиатуры 8 элементов массива
+    array[i] = int.Parse(Console.ReadLine());         // вывожу на экран i элемент массива
 }
 
  Console.Write("ваш массив: ");
-for (int i = 0; i < array.Length; i = i + 1)
+for (int i = 0; i < array.Length; i = i + 1)    //опять ввожу цикл который опять будет идти от i до конца
 {
-    Console.Write($"{array[i]} ");
+    Console.Write($"{array[i]} ");              // вывожу на экран i элемент массива
 }
